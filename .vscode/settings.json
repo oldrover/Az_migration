@@ -1,0 +1,10 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d6be66ef-56d4-4087-a72e-4d8bec0810fe/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/techconfapp",
+    "appService.deploySubpath": "web",
+    "azureFunctions.deploySubpath": "function",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.pythonVenv": ".venv",
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectRuntime": "~3",
+    "debug.internalConsoleOptions": "neverOpen"
+}
