@@ -67,11 +67,11 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | Azure Service Bus   |Basic    |       ~0,05€ |
 | Azure App Service   |Basic    |      ~11,00€ |
 | Azure Storage |      Standard |       ~1,00€ |
-| Azure Functions* | Consumption |      ~0,00€ |
-| SendGrid **   | Essentials    |       14,95$ | 
+| Azure Functions | Consumption |      ~0,00€ |
+| SendGrid    | Essentials    |       14,95$ | 
 
 * first 1.000.000 executions are free in Consumption tier
-** optionally Sendgrid offers 100 emails/day for free in the Free tier
+* optionally Sendgrid offers 100 emails/day for free in the Free tier
 
 ## Architecture Explanation
 I was provided with an already built Web App which should be migrated to Azure.
