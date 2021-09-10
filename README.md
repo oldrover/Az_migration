@@ -65,10 +65,17 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | -------------- | ------------ | ------------ |
 | Azure Postgres Database |Basic|      ~25,00€ |
 | Azure Service Bus   |Basic    |       ~0,05€ |
-| Azure App Service   |Basic    |      ~11.00€ |
-| Azure Storage |      Standard |       ~1.00€ |
+| Azure App Service   |Basic    |      ~11,00€ |
+| Azure Storage |      Standard |       ~1,00€ |
+| Azure Functions* | Consumption |      ~0,00€ |
+| SendGrid **   | Essentials    |       14,95$ | 
+
+* first 1.000.000 executions are free in Consumption tier
+** optionally Sendgrid offers 100 emails/day for free in the Free tier
 
 ## Architecture Explanation
 I was provided with an already built Web App which should be migrated to Azure.
 Therefore the database needed to be migrated via a backup to Azure Databases for PostgreSQL. 
 Then the Web app was deployed to Azure App Service as well as the apps notification flow, which was refactored to an Azure Function(Service Bus trigger) using Service Bus for reliability when frequently used.
+Migrating the app to Azure allows to scale easily without the hassle of managing the on-premise server and Microsoft guarantees an availability of 99.95% according to their SLA for App Service.
+Decoupling the notification service from the Web App allows fast response when sending notifications while the function handles the work as a backend.
